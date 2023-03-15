@@ -4,8 +4,8 @@ import { defaultSettings, GeneralObject } from "./defaultSettings";
 
 const showDialog = vscode.window.showInformationMessage;
 
-const firacodePath = (context: vscode.ExtensionContext) =>
-  path.resolve(context.extensionPath, "firaCodeFont");
+const JBMPath = (context: vscode.ExtensionContext) =>
+  path.resolve(context.extensionPath, "JetBrainsMono");
 
 const updateUserSettings = (settings: GeneralObject, remove = false) =>
   Object.entries(settings).forEach(([key, value]) =>
@@ -34,22 +34,22 @@ export function dirOpen(dirPath: string) {
   return require("child_process").exec(`${command} ${dirPath}`);
 }
 
-export function firaCodeActivation(context: vscode.ExtensionContext) {
-  const firacodeAddress = firacodePath(context);
+export function JBMActivation(context: vscode.ExtensionContext) {
+  const JBMAddress = JBMPath(context);
   updateUserSettings(defaultSettings);
-  dirOpen(firacodeAddress);
+  dirOpen(JBMAddress);
   showDialog(`${context.extension.packageJSON.displayName} is activated!`);
   showDialog(
-    `Important Note - Don't forget to install fonts! Font Directory will open, once you have manually installed fonts, restart VSCODE - ${firacodeAddress}`
+    `Important Note - Don't forget to install fonts! Font Directory will open, once you have manually installed fonts, restart VSCODE - ${JBMAddress}`
   );
 }
 
-export const firaCodeActivationPrompt = (context: vscode.ExtensionContext) =>
-  showDialog("Activate FiraCode?", "Yes", "No").then((value) =>
+export const JBMActivationPrompt = (context: vscode.ExtensionContext) =>
+  showDialog("Activate JetBrains Mono?", "Yes", "No").then((value) =>
     value === "Yes"
-      ? firaCodeActivation(context)
+      ? JBMActivation(context)
       : (showDialog(
-          "You can activate FiraCode later by running 'firacode' in command palette."
+          "You can activate JetBrains Mono later by running 'JetBrainsMono' or 'JBM' in command palette."
         ) as any)
   );
 
@@ -58,11 +58,11 @@ export function firstTimeActivation(context: vscode.ExtensionContext) {
   const previousVersion = context.globalState.get(context.extension.id);
   if (previousVersion === version) return;
 
-  firaCodeActivation(context);
+  JBMActivation(context);
   context.globalState.update(context.extension.id, version);
 }
 
-export function deactivateFiraCode(context: vscode.ExtensionContext) {
+export function deactivateJBM(context: vscode.ExtensionContext) {
   // context.globalState.update(context.extension.id, undefined);
   updateUserSettings(defaultSettings, true);
   showDialog(`${context.extension.packageJSON.displayName} is deactivated!`);
