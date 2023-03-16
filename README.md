@@ -1,21 +1,17 @@
-### For Freedom
+[![](https://img.shields.io/badge/Forked%20%20From-FiraCode%20Repo-blue)](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode) [![](https://img.shields.io/badge/Made%20with%20❤%EF%B8%8F%20by-Narasima.codes-red)](https://Narasima.codes)
 
-<a href="https://github.com/jadijadi">
-  <img src="./assets/jadi.jpg" width="150px" alt="jadi" title="jadi"/>
-</a>
-<br/>
+# JetBrains Mono: a typeface made for developers
 
-# FiraCode Font Pack
+![Alt text](images/main-img@2x.png)
 
-<a href="https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode">
-  <img src="./assets/firacode.jpg" width="150px"/>
-</a>
+JetBrains Mono is available as a standalone download, and is also bundled in all JetBrains IDEs. Discover more font features & design on its [web page](https://jetbrains.com/mono/).
 
-Free monospaced font with programming ligatures vscode extension
 
-#### Final Step
+# How to install
 
-<img src="./assets/firacode-font-directory.jpg" width="400" />
+#### Install font:
+
+<img src="./images/JBM-font-directory.gif" width="400" />
 
 When the **Font Directory** appears, install fonts if you haven't already, and restart VSCODE once you have.
 
@@ -23,44 +19,46 @@ When the **Font Directory** appears, install fonts if you haven't already, and r
 
 ### Available Commands
 
-- `Activate FiraCode Font pack`
-- `Deactivate FiraCode Font`
+- `Activate JetBrains Mono Font pack`
+- `Deactivate JetBrains Mono Font`
 
-**Note:** to run commands, press `ctrl+shift+p` to open the command palette, and then type each one and click on it.
+# Font Styles
 
-<details>
-<summary>
-<i>Here are the configurations this plugin will use</i>
-</summary>
+There are 8 font styles available in JetBrains Mono, from Thin to ExtraBold, each coming with its own _italic_ version.
 
-```json
-{
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true
-}
-```
+![Alt text](images/font-styles@2x.png)
 
-</details>
+## Font Features
 
-## How does it look with FiraCode font?
+### Increased x-height
 
-<img src="./assets/firacode-pattern.jpg" width="150"> <img src="./assets/progress.gif" alt="firacode progress" width="200px" />
+While characters remain standard in width, the height of the lowercase is maximized. This approach keeps code lines to the length that developers expect, and it helps improve rendering in small size, since each symbol occupies more pixels.
 
- <br/>
- 
- <img src="./assets/samples.png" alt="firacode font" />
+![Alt text](images/ff-increased-height@2x.png)
 
-## Recommended Extension pack
+### Distinctiveness of symbols
 
-<a href="https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.zpack">
-  <img style="margin:auto;" src="./assets/zpack.jpg" alt="zpack" width="200px" />
-</a>
+![Alt text](images/ff-distinctiveness-of-symbols@2x.gif)
 
-[ZPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.zpack) is An Opinionated collection of the `best` and `most` used extensions for Web Developers in VSCode which has Better `Developer Experience(DX)` and `load time` in Mind.
+## Ligatures for Code
 
-## Relevant Links
+A ligature is a character consisting of two or more joined symbols. Traditionally, it was introduced as a space-saving technique in printed texts. In code, this technique is adopted to show operators and is used mainly for two purposes:
 
-- [Github](https://github.com/SeyyedKhandon/tpack)
-- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.tpack)
+1. To **reduce noise** by merging symbols and removing details so the eyes are processing less:
 
-**Enjoy!**
+![Alt text](images/ligatures-1@2x.gif)
+
+2. To balance whitespace more efficiently by shifting the glyphs in certain cases:
+
+![Alt text](images/ligatures-2@2x.gif)
+
+📝 Note: if your IDE doesn’t support OpenType features and ligatures, use [JetBrains Mono NL](https://github.com/JetBrains/JetBrainsMono/tree/master/fonts/ttf) instead.
+
+## Basic Character Set
+
+![Alt text](images/character-set@2x.png)
+You can find full JetBrains Mono character set on official [wiki page](https://github.com/JetBrains/JetBrainsMono/wiki/List-of-supported-symbols).
+
+## Not your type?
+
+Check out - [FiraCode](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode) Font Pack
