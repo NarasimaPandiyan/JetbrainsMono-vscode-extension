@@ -1,10 +1,7 @@
 [![](https://img.shields.io/badge/Forked%20%20From-FiraCode%20Repo-blue)](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode) [![](https://img.shields.io/badge/Made%20with%20❤%EF%B8%8F%20by-Narasima.codes-red)](https://Narasima.codes)
-
 # JetBrains Mono: a typeface made for developers
 
 ![Alt text](images/main-img@2x.png)
-
-JetBrains Mono is available as a standalone download, and is also bundled in all JetBrains IDEs. Discover more font features & design on its [web page](https://jetbrains.com/mono/).
 
 
 # How to install
@@ -52,13 +49,15 @@ A ligature is a character consisting of two or more joined symbols. Traditionall
 
 ![Alt text](images/ligatures-2@2x.gif)
 
-📝 Note: if your IDE doesn’t support OpenType features and ligatures, use [JetBrains Mono NL](https://github.com/JetBrains/JetBrainsMono/tree/master/fonts/ttf) instead.
 
 ## Basic Character Set
 
 ![Alt text](images/character-set@2x.png)
 You can find full JetBrains Mono character set on official [wiki page](https://github.com/JetBrains/JetBrainsMono/wiki/List-of-supported-symbols).
 
-## Not your type?
+
+ [<img src="https://storage.ko-fi.com/cdn/brandasset/kofi_bg_tag_dark.png" height=90px>](https://ko-fi.com/W7W5CDSKN) 
+
+# Not your type?
 
 Check out - [FiraCode](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode) Font Pack

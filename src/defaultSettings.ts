@@ -4,4 +4,4 @@ export interface GeneralObject {
 export const defaultSettings = {
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true
-};
+}

@@ -30,12 +30,12 @@ npm manifest:
     "name": "jetbrainsmono",
     "displayName": "JetBrains Mono. A typeface for developers​_",
     "description": "JetBrains Mono font pack - OpenSource monospaced font with programming ligatures vscode extension",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "NarasimaPandiyan",
     "author": "Narasima Pandiyan",
-    "license": "MIT",
+    "license": "GPL-3.0-or-later",
     "galleryBanner": {
-      "color": "#dc3545",
+      "color": "#E0F3C2",
       "theme": "dark"
     },
     "icon": "images/JBM1.png",
@@ -65,11 +65,11 @@ npm manifest:
       "test": "node ./out/test/runTest.js"
     },
     "repository": {
-      "url": "https://github.com/NarasimaPandiyan/JetbrainsMono-vscode-extension.git"
+      "url": "https://github.com/NarasimaPandiyan/JetbrainsMono-vscode-extension"
     },
-    "homepage": "https://github.com/NarasimaPandiyan/JetbrainsMono-vscode-extension.git",
+    "homepage": "https://github.com/NarasimaPandiyan/JetbrainsMono-vscode-extension",
     "bugs": {
-      "url": "https://github.com/NarasimaPandiyan/JetbrainsMono-vscode-extension.git/issues"
+      "url": "https://github.com/NarasimaPandiyan/JetbrainsMono-vscode-extension/issues"
     },
     "keywords": [
       "font",
