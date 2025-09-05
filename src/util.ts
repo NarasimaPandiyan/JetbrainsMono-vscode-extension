@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import path = require("path");
+import * as path from "path";
 import { defaultSettings, GeneralObject } from "./defaultSettings";
 
 const showDialog = vscode.window.showInformationMessage;
@@ -8,7 +8,7 @@ const JBMPath = (context: vscode.ExtensionContext) =>
   path.resolve(context.extensionPath, "JetBrainsMono");
 
 const updateUserSettings = (settings: GeneralObject, remove = false) =>
-  Object.entries(settings).forEach(([key, value]) =>
+  Object.entries(settings).forEach(([key, value]: [string, any]) =>
     vscode.workspace
       .getConfiguration()
       .update(
@@ -31,7 +31,9 @@ export function dirOpen(dirPath: string) {
       command = "xdg-open";
       break;
   }
-  return require("child_process").exec(`${command} ${dirPath}`);
+  // Use import for child_process
+  const child_process = require("child_process");
+  return child_process.exec(`${command} "${dirPath}"`);
 }
 
 export function JBMActivation(context: vscode.ExtensionContext) {
@@ -45,7 +47,7 @@ export function JBMActivation(context: vscode.ExtensionContext) {
 }
 
 export const JBMActivationPrompt = (context: vscode.ExtensionContext) =>
-  showDialog("Activate JetBrains Mono?", "Yes", "No").then((value) =>
+  showDialog("Activate JetBrains Mono?", "Yes", "No").then((value: string | undefined) =>
     value === "Yes"
       ? JBMActivation(context)
       : (showDialog(
@@ -55,7 +57,7 @@ export const JBMActivationPrompt = (context: vscode.ExtensionContext) =>
 
 export function firstTimeActivation(context: vscode.ExtensionContext) {
   const version = context.extension.packageJSON.version ?? "1.0.0";
-  const previousVersion = context.globalState.get(context.extension.id);
+  const previousVersion = context.globalState.get<string>(context.extension.id);
   if (previousVersion === version) return;
 
   JBMActivation(context);
@@ -63,7 +65,6 @@ export function firstTimeActivation(context: vscode.ExtensionContext) {
 }
 
 export function deactivateJBM(context: vscode.ExtensionContext) {
-  // context.globalState.update(context.extension.id, undefined);
   updateUserSettings(defaultSettings, true);
   showDialog(`${context.extension.packageJSON.displayName} is deactivated!`);
 }
