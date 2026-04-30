@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/Forked%20%20From-FiraCode%20Repo-blue)](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode) [![](https://img.shields.io/badge/Made%20with%20❤%EF%B8%8F%20by-Narasima.codes-red)](https://Narasima.codes)
+[![badge](https://www.shieldcn.dev/badge/Firacode.svg?theme=zinc&logo=github&split=true&label=Fork)](https://github.com/SeyyedKhandon/firacode-vscode-extension) ![badge](https://www.shieldcn.dev/vscode/installs/NarasimaPandiyan/jetbrainsmono.svg?theme=zinc) ![rating](https://shieldcn.dev/vscode/rating/NarasimaPandiyan/jetbrainsmono.svg?variant=secondary)  [![badge](https://www.shieldcn.dev/badge/Narasima.svg?theme=zinc&logo=lu%3AUser&split=true&label=Author)](https://narasima.codes)
 # JetBrains Mono: a typeface made for developers
 
 ![Alt text](images/main-img@2x.png)
