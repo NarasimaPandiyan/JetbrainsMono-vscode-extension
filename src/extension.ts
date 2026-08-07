@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import {
   deactivateJBM,
-  JBMActivation,
+  jbmActivation,
   firstTimeActivation
 } from "./util";
 
@@ -15,7 +15,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 
   const activateCommand = vscode.commands.registerCommand(
     "jetbrainsmono.activate",
-    () => JBMActivation(context)
+    () => jbmActivation(context)
   );
   const deactivateCommand = vscode.commands.registerCommand(
     "jetbrainsmono.deactivate",
@@ -24,6 +24,6 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
   context.subscriptions.push(activateCommand, deactivateCommand);
 }
 
-export function deactivate(context: vscode.ExtensionContext): void {
-  deactivateJBM(context);
+export function deactivate(): void {
+  deactivateJBM();
 }
