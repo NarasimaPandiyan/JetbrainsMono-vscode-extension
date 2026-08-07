@@ -1,4 +1,4 @@
-[![badge](https://www.shieldcn.dev/badge/Firacode.svg?theme=zinc&logo=github&split=true&label=Fork)](https://github.com/SeyyedKhandon/firacode-vscode-extension) ![badge](https://www.shieldcn.dev/vscode/installs/NarasimaPandiyan/jetbrainsmono.svg?theme=zinc) ![rating](https://shieldcn.dev/vscode/rating/NarasimaPandiyan/jetbrainsmono.svg?variant=secondary)  [![badge](https://www.shieldcn.dev/badge/Narasima.svg?theme=zinc&logo=lu%3AUser&split=true&label=Author)](https://narasima.codes)
+[![badge](https://www.shieldcn.dev/badge/Firacode.png?theme=zinc&logo=github&split=true&label=Fork)](https://github.com/SeyyedKhandon/firacode-vscode-extension) ![badge](https://www.shieldcn.dev/vscode/installs/NarasimaPandiyan/jetbrainsmono.png?theme=zinc) ![rating](https://shieldcn.dev/vscode/rating/NarasimaPandiyan/jetbrainsmono.png?variant=secondary)  [![badge](https://www.shieldcn.dev/badge/Narasima.png?theme=zinc&logo=lu%3AUser&split=true&label=Author)](https://narasima.codes)
 # JetBrains Mono: a typeface made for developers
 
 ![Alt text](images/main-img@2x.png)
