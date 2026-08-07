@@ -2,7 +2,7 @@
   "name": "jetbrainsmono",
   "displayName": "JetBrains Mono. A typeface for developers​_",
   "description": "JetBrains Mono font pack - OpenSource monospaced font with programming ligatures vscode extension",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "NarasimaPandiyan",
   "author": "Narasima Pandiyan",
   "license": "GPL-3.0-or-later",
@@ -13,7 +13,8 @@
   "icon": "images/JBM1.png",
   "activationEvents": [
     "onStartupFinished",
-    "onCommand:jetbrainsmono.activate"
+    "onCommand:jetbrainsmono.activate",
+    "onCommand:jetbrainsmono.deactivate"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -75,11 +76,9 @@
     "@vscode/test-electron": "^2.1.5",
     "eslint": "^8.24.0",
     "follow-redirects": "^1.13.3",
-    "fs": "^0.0.1-security",
     "glob": "^8.0.3",
     "inly": "^4.0.8",
     "mocha": "^10.0.0",
-    "path": "^0.12.7",
     "typescript": "4.9.5",
     "vscode-test": "^1.5.0"
   }
